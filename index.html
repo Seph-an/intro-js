@@ -48,6 +48,21 @@
         console.log(newString);
      }
      capitalize("bmvKASlaD");
+
+     //Write a function called lastLetter that takes a string and returns the very last letter of that string:
+     function lastLetter(k){
+        let lastEl = '';
+        for (let i = 0; i < k.length; i++) {
+            const element = k[i];
+            const b = k.length-1;//last index of array
+            if (i == b) {
+                // console.log(b)
+                lastEl = element;
+            }
+        }
+        console.log(lastEl)
+     }
+     lastLetter("akn")
     </script>
 </body>
 </html>
