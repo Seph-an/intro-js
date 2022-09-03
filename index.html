@@ -8,12 +8,46 @@
 </head>
 <body>
     <script>
+    // Write a function called add7 that takes one number and returns that number + 7.
       function add7(n){
         let b=7;
         console.log(n+b)
         // return n+7;
       }
-      add7(7)
+      add7(7);//14
+    //   Write a function called multiply that takes 2 numbers and returns their product.
+      function multiply(x,y){
+        console.log(x*y);
+      }
+      multiply(8,10)//80
+      /*
+      Write a function called capitalize that takes a string and returns
+      that string with only the first letter capitalized. Make sure 
+      that it can take strings that are lowercase, UPPERCASE or BoTh.
+      */
+     function capitalize(k){
+        let m = k.toLowerCase();
+        let newString = [];
+
+        for (let i = 0; i < m.length; i++) {
+            let element = m[i]
+            // element.toUpperCase();
+            if (i == 0) {
+                console.log("The elemt here is:", element.toUpperCase());
+                element = element.toUpperCase();
+            }
+            newString.push(element)
+        }
+        //Learnt that .toString separates elements by ',' thus not the best option for our case
+        // newString = newString.toString()//"A","m","a","d"
+        newString = newString.join('')
+        /*
+        The above works as desired because the join() method creates and returns
+         a new string by concatenating all of the elements in an array
+        */
+        console.log(newString);
+     }
+     capitalize("bmvKASlaD");
     </script>
 </body>
 </html>
